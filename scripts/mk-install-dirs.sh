@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env sh
 # mkinstalldirs --- make directory hierarchy
 # Author: Noah Friedman <friedman@prep.ai.mit.edu>
 # Created: 1993-05-16

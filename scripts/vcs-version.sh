@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #=========================================================================
 # vcs-version.sh [options] [src-dir]
 #=========================================================================
@@ -12,7 +12,7 @@
 # version control system but it would be possible to check and see if we
 # are using an alternative version control system and create a version
 # string appropriately.
-# 
+#
 # The script uses git describe plus a few other git commands to create a
 # version strings in the following format:
 #
@@ -104,7 +104,7 @@ else
   untracked=`git ls-files --directory --exclude-standard --others -t`
   if ( test -n "${untracked}" ); then
     ver_str="${ver_str}-dirty"
-  fi  
+  fi
 fi
 
 # Output the final version string
